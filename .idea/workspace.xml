@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="" />
+    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/templates/ParkingApp_MS/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/Parking_MS/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/Parking_MS/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/Parking_MS/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/Parking_MS/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/Parking_MS/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -14,18 +43,49 @@
   "associatedIndex": 5
 }]]></component>
   <component name="ProjectId" id="2nKiMWbKExYS4qGZtsyzl3Fmt0D" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.urls.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/qq/PycharmProjects/Parking_Managament_System/Parking_MS/manage.py"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Application" type="PythonConfigurationType" factoryName="Python">
+      <module name="Parking_Managament_System" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Parking_Managament_System)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Parking_MS/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -42,6 +102,20 @@
       <option name="presentableId" value="Default" />
       <updated>1728728120873</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1728728303280</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728728303280</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>
