@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/templates/ParkingApp_MS/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/Parking_MS/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/Parking_MS/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/Parking_MS/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/Parking_MS/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/Parking_MS/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/templates/ParkingApp_MS/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/templates/ParkingApp_MS/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +23,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2nKiMWbKExYS4qGZtsyzl3Fmt0D" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -58,7 +42,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/qq/PycharmProjects/Parking_Managament_System/Parking_MS/manage.py"
+    "last_opened_file_path": "C:/Users/qq/PycharmProjects/Parking_Managament_System/Parking_MS/manage.py",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="RunManager">
@@ -71,11 +59,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (Parking_Managament_System)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Parking_MS/manage.py" />
       <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -116,6 +104,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Second hello world added (test commit)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second hello world added (test commit)" />
   </component>
 </project>
