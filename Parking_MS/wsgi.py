@@ -1,5 +1,5 @@
 """
-WSGI config for Parking_MS project.
+WSGI config for Parking_MS_old project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% block title %}
+    Vehicles
+{% endblock %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block content %}
+    <section class="user-vehicles">
+        <div class="vertical-container">
+            <h2>Your vehicles:</h2>
+            {% if user.vehicles.all %}
+                <table id="user-vehicles-table" class="display" style="width:100%">
+                    <thead>
+                    <tr>
+                        <th>License plate</th>
+                        <th>Make</th>
+                        <th>Model</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for vehicle in user.vehicles.all %}
+                        <td>{{ vehicle.licensePlate }}</td>
+                        <td>{{ vehicle.make }}</td>
+                        <td>{{ vehicle.model }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <br>
+                <p>There is currently no vehicles assigned to your account.</p>
+            {% endif %}
+        </div>
+        <div class="vertical-container">
+            <h2>Register new vehicle:</h2>
+            <form id="register-vehicle-form" class="form-with-validation" method="POST">
+                {% csrf_token %}
+                {{ form.as_table }}
+                <button class="form-submit" type="submit">Register Vehicle</button>
+            </form>
+        </div>
+    </section>
+{% endblock %}
+
+{% block extra_scripts %}
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script>
+        const userVehiclesTable = $('#user-vehicles-table').DataTable({
+            scrollY: 200,
+            scroller: true,
+            paging: false,
+            info: false,
+            scrollX: 400,
+            searching: false
+        });
+    </script>
+{% endblock %}

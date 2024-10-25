@@ -1,0 +1,77 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        {% block title %}
+            Parking Management System
+        {% endblock %}
+    </title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    {% block extra_head %}
+    {% endblock %}
+
+</head>
+<body>
+<nav class="navbar">
+
+    <div class="navbar-left">
+        <a href="/">
+            <span role="img" aria-label="Home">🏠</span>
+        </a> |
+        <a href="/stats">
+            <span role="img" aria-label="Stats">📊</span>
+        </a>
+        {% if user.is_authenticated %}
+            |
+            <a href="{% url 'vehicles:vehicles' %}">
+                <span role="img" aria-label="Vehicles">🚗</span>
+            </a> |
+            <a href="{% url 'transactions:transactions' %}">
+                <span role="img" aria-label="Transactions">📚</span>
+            </a>
+        {% else %}
+
+        {% endif %}
+
+
+    </div>
+
+    <div class="navbar-right">
+        {% if user.is_authenticated %}
+            Logged as {{ user.username }}!
+            <form class="logout" action="{% url 'users:logout' %}" method="post">
+                {% csrf_token %}
+                <button class="logout-button" aria-label="User logout" title="User logout">👋</button>
+            </form>
+        {% else %}
+            Log in or sign up
+            <a href= {% url 'users:login' %}>
+                <span role="img" aria-label="User login">🔑</span>
+            </a> |
+            <a href= {% url 'users:register' %}>
+                <span role="img" aria-label="User register">🚀</span>
+            </a>
+        {% endif %}
+
+    </div>
+
+
+</nav>
+<main>
+    {% block content %}
+
+    {% endblock %}
+</main>
+
+{% block extra_scripts %}
+
+{% endblock %}
+</body>
+</html>

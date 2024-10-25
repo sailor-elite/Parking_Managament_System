@@ -4,9 +4,64 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Initial commit">
+    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Second hello world added (test commit)">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_MS/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/parking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/stats.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transactions/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transactions/migrations/0002_transaction_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transactions/migrations/0003_alter_transaction_entrytime_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transactions/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transactions/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicles/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicles/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicles/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicles/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicles/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicles/migrations/0002_vehicle_owners_alter_vehicle_licenseplate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicles/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicles/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicles/templates/vehicles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicles/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicles/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicles/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Parking_Managament_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Parking_Managament_System.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/templates/ParkingApp_MS/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/templates/ParkingApp_MS/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/templates/ParkingApp_MS/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/Parking_MS/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/Parking_MS/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/Parking_MS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/Parking_MS/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/Parking_MS/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/templates/transactions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +72,30 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;alicki-hash&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sailor-elite/Parking_Managament_System.git&quot;,
+    &quot;accountId&quot;: &quot;672b7af6-9c0d-49d9-894b-54872ee411fc&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -38,17 +112,35 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
+    "Python.Application.executor": "Run",
     "Python.urls.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/qq/PycharmProjects/Parking_Managament_System/Parking_MS/manage.py",
+    "last_opened_file_path": "/Users/arek/PycharmProjects/Parking_Managament_System",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Parking_MS" />
+      <recent name="$PROJECT_DIR$/Parking_MS/users/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Parking_MS" />
+      <recent name="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/templates" />
+      <recent name="$PROJECT_DIR$/Parking_MS/ParkingApp_MS" />
+      <recent name="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/static" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Application" type="PythonConfigurationType" factoryName="Python">
       <module name="Parking_Managament_System" />
@@ -64,7 +156,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Parking_MS/manage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
       <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -77,7 +169,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-d68999036c7f-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.14475.56" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
       </set>
     </attachedChunks>
   </component>
@@ -89,6 +182,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728728120873</updated>
+      <workItem from="1728767198244" duration="39068000" />
+      <workItem from="1729101469982" duration="8423000" />
+      <workItem from="1729324757368" duration="275000" />
+      <workItem from="1729622795973" duration="7733000" />
+      <workItem from="1729637721240" duration="12518000" />
+      <workItem from="1729725886973" duration="915000" />
+      <workItem from="1729726938775" duration="269000" />
+      <workItem from="1729727215292" duration="507000" />
+      <workItem from="1729727814155" duration="411000" />
+      <workItem from="1729728247570" duration="2065000" />
+      <workItem from="1729788246762" duration="584000" />
+      <workItem from="1729788841028" duration="18986000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -98,13 +203,27 @@
       <option name="project" value="LOCAL" />
       <updated>1728728303280</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second hello world added (test commit)">
+      <option name="closed" value="true" />
+      <created>1728730991653</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728730991653</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Second hello world added (test commit)" />
     <option name="LAST_COMMIT_MESSAGE" value="Second hello world added (test commit)" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Parking_Managament_System$Application.coverage" NAME="Application Coverage Results" MODIFIED="1729846007399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

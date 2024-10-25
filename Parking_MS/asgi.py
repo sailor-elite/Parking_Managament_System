@@ -1,5 +1,5 @@
 """
-ASGI config for Parking_MS project.
+ASGI config for Parking_MS_old project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
