@@ -29,6 +29,10 @@ img {
 
 }
 
+.active-tab {
+    border-bottom: 2px solid white;
+}
+
 main {
     flex-grow: 1;
     display: grid;

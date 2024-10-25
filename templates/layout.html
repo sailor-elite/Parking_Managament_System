@@ -23,18 +23,20 @@
 
     <div class="navbar-left">
         <a href="/">
-            <span role="img" aria-label="Home">🏠</span>
+            <span role="img" aria-label="Home" class="{% if request.path == '/' %}active-tab{% endif %}">🏠</span>
         </a> |
         <a href="/stats">
-            <span role="img" aria-label="Stats">📊</span>
+            <span role="img" aria-label="Stats" class="{% if request.path == '/stats' %}active-tab{% endif %}">📊</span>
         </a>
         {% if user.is_authenticated %}
             |
             <a href="{% url 'vehicles:vehicles' %}">
-                <span role="img" aria-label="Vehicles">🚗</span>
+                <span role="img" aria-label="Vehicles"
+                      class="{% if request.path == '/vehicles/' %}active-tab{% endif %}">🚗</span>
             </a> |
             <a href="{% url 'transactions:transactions' %}">
-                <span role="img" aria-label="Transactions">📚</span>
+                <span role="img" aria-label="Transactions"
+                      class="{% if request.path == '/transactions/' %}active-tab{% endif %}">📚</span>
             </a>
         {% else %}
 

@@ -4,64 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Second hello world added (test commit)">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parking_MS/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/parking.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/stats.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactions/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactions/migrations/0002_transaction_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactions/migrations/0003_alter_transaction_entrytime_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactions/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactions/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicles/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicles/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicles/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicles/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicles/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicles/migrations/0002_vehicle_owners_alter_vehicle_licenseplate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicles/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicles/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicles/templates/vehicles.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicles/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicles/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicles/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Parking_Managament_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Parking_Managament_System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Basic views and relationships have been created.&#10;&#10;TO DO:&#10;*Work on the appearance of the home page&#10;*Implement user groups&#10;*Limit the visibility of /stats and /transactions for regular users&#10;*Work on the layout footer&#10;*Implement a way to communicate between the mobile app and the database (api?)&#10;*Implement communication between the controller (barrier simulation) and the mobile and web application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/templates/ParkingApp_MS/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/Parking_MS/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/Parking_MS/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/Parking_MS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/Parking_MS/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/Parking_MS/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/templates/transactions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,12 +34,12 @@
     &quot;assignee&quot;: &quot;alicki-hash&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sailor-elite/Parking_Managament_System.git&quot;,
-    &quot;accountId&quot;: &quot;672b7af6-9c0d-49d9-894b-54872ee411fc&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/sailor-elite/Parking_Managament_System.git",
+    "accountId": "4d7fa429-3712-4abb-8359-1028bbab5164"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -193,7 +139,7 @@
       <workItem from="1729727814155" duration="411000" />
       <workItem from="1729728247570" duration="2065000" />
       <workItem from="1729788246762" duration="584000" />
-      <workItem from="1729788841028" duration="18986000" />
+      <workItem from="1729788841028" duration="20866000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -211,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728730991653</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Basic views and relationships have been created.&#10;&#10;TO DO:&#10;*Work on the appearance of the home page&#10;*Implement user groups&#10;*Limit the visibility of /stats and /transactions for regular users&#10;*Work on the layout footer&#10;*Implement a way to communicate between the mobile app and the database (api?)&#10;*Implement communication between the controller (barrier simulation) and the mobile and web application">
+      <option name="closed" value="true" />
+      <created>1729874887583</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729874887583</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +175,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Second hello world added (test commit)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second hello world added (test commit)" />
+    <MESSAGE value="Basic views and relationships have been created.&#10;&#10;TO DO:&#10;*Work on the appearance of the home page&#10;*Implement user groups&#10;*Limit the visibility of /stats and /transactions for regular users&#10;*Work on the layout footer&#10;*Implement a way to communicate between the mobile app and the database (api?)&#10;*Implement communication between the controller (barrier simulation) and the mobile and web application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic views and relationships have been created.&#10;&#10;TO DO:&#10;*Work on the appearance of the home page&#10;*Implement user groups&#10;*Limit the visibility of /stats and /transactions for regular users&#10;*Work on the layout footer&#10;*Implement a way to communicate between the mobile app and the database (api?)&#10;*Implement communication between the controller (barrier simulation) and the mobile and web application" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Parking_Managament_System$Application.coverage" NAME="Application Coverage Results" MODIFIED="1729846007399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
