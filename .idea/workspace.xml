@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Added dynamic underline to navbar to make it more interactive.">
-      <change afterPath="$PROJECT_DIR$/static/parkingOld.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicles/migrations/0003_alter_vehicle_model.py" afterDir="false" />
+    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Added navbar title and few adjustments to Home Page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/parking.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/parking.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stats.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stats.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/templates/transactions.html" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/templates/transactions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicles/templates/vehicles.html" beforeDir="false" afterPath="$PROJECT_DIR$/vehicles/templates/vehicles.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +138,7 @@
       <workItem from="1729728247570" duration="2065000" />
       <workItem from="1729788246762" duration="584000" />
       <workItem from="1729788841028" duration="26961000" />
-      <workItem from="1729953788930" duration="10275000" />
+      <workItem from="1729953788930" duration="11206000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -184,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729876782713</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added navbar title and few adjustments to Home Page">
+      <option name="closed" value="true" />
+      <created>1730029646399</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730029646399</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,9 +192,10 @@
     <MESSAGE value="Second hello world added (test commit)" />
     <MESSAGE value="Basic views and relationships have been created.&#10;&#10;TO DO:&#10;*Work on the appearance of the home page&#10;*Implement user groups&#10;*Limit the visibility of /stats and /transactions for regular users&#10;*Work on the layout footer&#10;*Implement a way to communicate between the mobile app and the database (api?)&#10;*Implement communication between the controller (barrier simulation) and the mobile and web application" />
     <MESSAGE value="Added dynamic underline to navbar to make it more interactive." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dynamic underline to navbar to make it more interactive." />
+    <MESSAGE value="Added navbar title and few adjustments to Home Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added navbar title and few adjustments to Home Page" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Parking_Managament_System$Application.coverage" NAME="Application Coverage Results" MODIFIED="1729953948614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Parking_Managament_System$Application.coverage" NAME="Application Coverage Results" MODIFIED="1730030105880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
