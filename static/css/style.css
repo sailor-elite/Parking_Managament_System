@@ -12,10 +12,6 @@ body {
     flex-flow: column;
 }
 
-img {
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
-    border-radius: 1rem;
-}
 
 .navbar {
     display: flex;
@@ -26,7 +22,24 @@ img {
     justify-content: space-between;
     flex-flow: row;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+    align-items: center;
 
+}
+
+.navbar-left, .navbar-right {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .active-tab {
@@ -71,6 +84,50 @@ a:hover {
 .scrollable-list {
     padding: 10px;
     margin: 0;
+}
+
+.home-view {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.parking-view-left {
+    width: 40%;
+    /*height: 40vh;*/
+    /*height: 100%;*/
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.parking-view-left div {
+    flex: 1;
+
+}
+
+#green-zone-details {
+    background-color: #DEFEDE;
+}
+
+#blue-zone-details {
+    background-color: #E7F9FF;
+}
+
+#red-zone-details {
+    background-color: #FFE2DD;
+}
+
+.parking-view-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* or 'contain' depending on your needs */
+}
+
+.home-view-details {
+    width: 100%;
 }
 
 .scrollable-list li {
@@ -151,7 +208,8 @@ a:hover {
 
 #transactions-table_wrapper, #vehicles-table_wrapper,
 #users-table_wrapper, #stats-details, #user-vehicles-table_wrapper,
-#register-vehicle-form {
+#register-vehicle-form, .parking-view-bottom, .parking-view-right, .parking-view-left,
+#green-zone-details, #blue-zone-details, #red-zone-details, .form-with-validation {
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
     border-radius: 1rem;
     padding: 1em;
@@ -174,7 +232,6 @@ a:hover {
 
 #stats-details div {
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 10px;
     font-family: Arial, sans-serif;

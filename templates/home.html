@@ -4,8 +4,27 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Home Page</h1>
-    <img src="static/parking.png">
-    <p>The parking lot has three zones: green, blue and red.
-        Access to the zones depends on your role at the university.</p>
+    <section class="home-view">
+        <div class="parking-view-left">
+            <div id="green-zone-details">
+                <p>Free parking spaces in the green zone:</p>
+            </div>
+            <div id="blue-zone-details">
+                <p>Free parking spaces in the blue zone:</p>
+            </div>
+            <div id="red-zone-details">
+                <p>Free parking spaces in the red zone:</p>
+            </div>
+        </div>
+        <div class="parking-view-right">
+            <img src="static/parking.png">
+        </div>
+    </section>
+    <section class="home-view-details">
+        <div class="parking-view-bottom">
+            <p>The parking lot has three zones: green, blue and red.
+                Access to the zones depends on your role at the university.</p>
+        </div>
+    </section>
+
 {% endblock %}

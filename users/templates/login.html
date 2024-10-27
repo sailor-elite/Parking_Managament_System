@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
 {% block title %}
-    User Login
+    Login
 {% endblock %}
-
+{% block navbar-title %}
+    Login
+{% endblock %}
 {% block content %}
     <h1>User Login</h1>
     <form class="form-with-validation" action="/users/login/" method="post">

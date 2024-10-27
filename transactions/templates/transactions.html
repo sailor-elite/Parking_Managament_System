@@ -1,7 +1,12 @@
 {% extends "layout.html" %}
 {% block title %}
-    Transactions Page
+    Transactions
 {% endblock %}
+
+{% block navbar-title %}
+    Transactions
+{% endblock %}
+
 
 {% block extra_head %}
     <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css"/>
@@ -12,8 +17,6 @@
 
 
 {% block content %}
-
-    <h2>Transactions Page</h2>
     <table id="transactions-table" class="display" style="width:100%">
         <thead>
         <tr>

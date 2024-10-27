@@ -2,6 +2,9 @@
 {% block title %}
     Stats
 {% endblock %}
+{% block navbar-title %}
+    Stats
+{% endblock %}
 
 {% block extra_head %}
     <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css"/>
@@ -20,6 +23,7 @@
                     <th>First name</th>
                     <th>Last name</th>
                     <th>Username</th>
+                    <th>Roles</th>
                     <th>Last log in time</th>
                 </tr>
                 </thead>
@@ -37,11 +41,17 @@
                         <td>{{ user.first_name }}</td>
                         <td>{{ user.last_name }}</td>
                         <td>{{ user.username }}</td>
+                        <td>
+                            {% for group in user.groups.all %}
+                                {{ group.name }}{% if not forloop.last %},<br>{% endif %}
+                            {% endfor %}
+                        </td>
                         <td>{{ user.last_login }}</td>
                     </tr>
                 {% endfor %}
                 </tbody>
             </table>
+            <p>&#8593; Click on the entry to display details. &#8593;</p>
         </div>
 
         <div class="vertical-container">
@@ -70,6 +80,7 @@
                 {% endfor %}
                 </tbody>
             </table>
+            <p>&#8593; Click on the entry to display details. &#8593;</p>
         </div>
     </section>
 
@@ -77,6 +88,7 @@
         <div id="users-stats-details"></div>
         <div id="vehicles-stats-details"></div>
     </div>
+
 {% endblock %}
 
 {% block extra_scripts %}
@@ -108,7 +120,8 @@
                     First Name: ${data[0]}<br>
                     Last Name: ${data[1]}<br>
                     Username: ${data[2]}<br>
-                    Last Login: ${data[3]}
+                    Roles: ${data[3]}<br>
+                    Last Login: ${data[4]}
                 </li>
             </ul>
             `);

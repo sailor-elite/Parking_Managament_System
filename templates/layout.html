@@ -20,7 +20,6 @@
 </head>
 <body>
 <nav class="navbar">
-
     <div class="navbar-left">
         <a href="/">
             <span role="img" aria-label="Home" class="{% if request.path == '/' %}active-tab{% endif %}">🏠</span>
@@ -43,6 +42,10 @@
         {% endif %}
 
 
+    </div>
+
+    <div class="navbar-center">
+        {% block navbar-title %}Parking Management System{% endblock %}
     </div>
 
     <div class="navbar-right">

@@ -2,6 +2,9 @@
 {% block title %}
     Vehicles
 {% endblock %}
+{% block navbar-title %}
+    Vehicles
+{% endblock %}
 
 {% block extra_head %}
     <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css"/>
@@ -32,6 +35,7 @@
                     {% endfor %}
                     </tbody>
                 </table>
+                <p>&#8593; Here is the list of all vehicles assigned to Your account. &#8593;</p>
             {% else %}
                 <br>
                 <p>There is currently no vehicles assigned to your account.</p>
