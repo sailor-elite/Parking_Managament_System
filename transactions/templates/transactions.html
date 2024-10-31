@@ -22,9 +22,12 @@
         <tr>
             <th>License plate</th>
             <th>Make & Model</th>
-            <th>User</th>
-            <th>Entry time</th>
-            <th>Exit time</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Username</th>
+            <th>Parking name</th>
+            <th>Parking zone</th>
+            <th>Timestamp</th>
         </tr>
         </thead>
         <tbody>
@@ -32,9 +35,12 @@
             <tr>
                 <td>{{ transaction.vehicle.licensePlate }}</td>
                 <td>{{ transaction.vehicle.make }} {{ transaction.vehicle.model }}</td>
+                <td>{{ transaction.user.first_name }}</td>
+                <td>{{ transaction.user.last_name }}</td>
                 <td>{{ transaction.user.username }}</td>
-                <td>{{ transaction.entryTime }}</td>
-                <td>{{ transaction.exitTime }}</td>
+                <td>{{ transaction.parking.name }}</td>
+                <td>{{ transaction.get_zone_display }}</td>
+                <td>{{ transaction.transactionTimestamp }}</td>
             </tr>
         {% endfor %}
         </tbody>

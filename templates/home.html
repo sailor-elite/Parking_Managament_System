@@ -7,16 +7,20 @@
     <section class="home-view">
         <div class="parking-view-left">
             <div id="green-zone-details">
-                <p>Free parking spaces in the green zone:</p>
+                <h1>Free parking spaces in the green zone:</h1>
+                <h1>{{ available_green_spaces }}</h1>
             </div>
             <div id="blue-zone-details">
-                <p>Free parking spaces in the blue zone:</p>
+                <h1>Free parking spaces in the blue zone:</h1>
+                <h1>{{ available_blue_spaces }}</h1>
             </div>
             <div id="red-zone-details">
-                <p>Free parking spaces in the red zone:</p>
+                <h1>Free parking spaces in the red zone:</h1>
+                <h1>{{ available_red_spaces }}</h1>
             </div>
         </div>
         <div class="parking-view-right">
+            <h1>{{ parking.name }}</h1>
             <img src="static/parking.png">
         </div>
     </section>

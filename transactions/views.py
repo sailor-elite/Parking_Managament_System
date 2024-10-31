@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+from parking.models import Parking
 from transactions.models import Transaction
 
 
