@@ -36,6 +36,10 @@
             <a href="{% url 'transactions:transactions' %}">
                 <span role="img" aria-label="Transactions"
                       class="{% if request.path == '/transactions/' %}active-tab{% endif %}">📚</span>
+            </a> |
+            <a href="{% url 'transactions:add_transaction' %}">
+                <span role="img" aria-label="Add Transaction"
+                      class="{% if request.path == '/transactions/add/' %}active-tab{% endif %}">🚦</span>
             </a>
         {% else %}
 

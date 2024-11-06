@@ -4,33 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Added navbar title and few adjustments to Home Page">
-      <change afterPath="$PROJECT_DIR$/parking/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/migrations/0002_parking_parkingname.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/migrations/0003_rename_parkingname_parking_name.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/migrations/0004_remove_parking_bluezonespaces_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/migrations/0005_remove_parking_capacity_remove_parking_zone_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parking/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactions/migrations/0004_rename_entrytime_transaction_transactiontimestamp_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactions/migrations/0005_transaction_parking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transactions/migrations/0006_transaction_zone.py" afterDir="false" />
+    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Added parking spots calculation logic, modified app home view">
+      <change afterPath="$PROJECT_DIR$/transactions/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transactions/templates/add_transaction.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stats.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stats.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transactions/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/templates/transactions.html" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/templates/transactions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transactions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,28 +60,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.Application.executor&quot;: &quot;Run&quot;,
-    &quot;Python.urls.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/arek/PycharmProjects/Parking_Managament_System&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.Application.executor": "Run",
+    "Python.urls.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/arek/PycharmProjects/Parking_Managament_System/transactions/templates",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/transactions/templates" />
       <recent name="$PROJECT_DIR$/Parking_MS" />
       <recent name="$PROJECT_DIR$/Parking_MS/users/templates" />
     </key>
@@ -163,7 +147,7 @@
       <workItem from="1729728247570" duration="2065000" />
       <workItem from="1729788246762" duration="584000" />
       <workItem from="1729788841028" duration="26961000" />
-      <workItem from="1729953788930" duration="28218000" />
+      <workItem from="1729953788930" duration="37408000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -213,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730031021853</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added parking spots calculation logic, modified app home view">
+      <option name="closed" value="true" />
+      <created>1730408756064</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730408756064</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,9 +218,10 @@
     <MESSAGE value="Basic views and relationships have been created.&#10;&#10;TO DO:&#10;*Work on the appearance of the home page&#10;*Implement user groups&#10;*Limit the visibility of /stats and /transactions for regular users&#10;*Work on the layout footer&#10;*Implement a way to communicate between the mobile app and the database (api?)&#10;*Implement communication between the controller (barrier simulation) and the mobile and web application" />
     <MESSAGE value="Added dynamic underline to navbar to make it more interactive." />
     <MESSAGE value="Added navbar title and few adjustments to Home Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added navbar title and few adjustments to Home Page" />
+    <MESSAGE value="Added parking spots calculation logic, modified app home view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added parking spots calculation logic, modified app home view" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Parking_Managament_System$Application.coverage" NAME="Application Coverage Results" MODIFIED="1730405354644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Parking_Managament_System$Application.coverage" NAME="Application Coverage Results" MODIFIED="1730915773001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
