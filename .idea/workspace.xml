@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Added trigger for embedded controller (barrier simulation), implemented transaction creation form">
-      <change afterPath="$PROJECT_DIR$/parking/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicles/serializers.py" afterDir="false" />
+    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Added parking spots calculation logic, modified app home view">
+      <change beforePath="$PROJECT_DIR$/.idea/Parking_Managament_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Parking_Managament_System.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +29,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -45,6 +43,9 @@
     &quot;accountId&quot;: &quot;4d7fa429-3712-4abb-8359-1028bbab5164&quot;
   }
 }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -121,8 +122,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
-        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+        <option value="bundled-python-sdk-c69650fc56ca-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15619.17" />
       </set>
     </attachedChunks>
   </component>
@@ -146,8 +146,7 @@
       <workItem from="1729728247570" duration="2065000" />
       <workItem from="1729788246762" duration="584000" />
       <workItem from="1729788841028" duration="26961000" />
-      <workItem from="1729953788930" duration="41345000" />
-      <workItem from="1731195089590" duration="10261000" />
+      <workItem from="1729953788930" duration="37408000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -205,15 +204,7 @@
       <option name="project" value="LOCAL" />
       <updated>1730408756064</updated>
     </task>
-    <task id="LOCAL-00008" summary="Added trigger for embedded controller (barrier simulation), implemented transaction creation form">
-      <option name="closed" value="true" />
-      <created>1730916318647</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1730916318647</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,21 +218,9 @@
     <MESSAGE value="Added dynamic underline to navbar to make it more interactive." />
     <MESSAGE value="Added navbar title and few adjustments to Home Page" />
     <MESSAGE value="Added parking spots calculation logic, modified app home view" />
-    <MESSAGE value="Added trigger for embedded controller (barrier simulation), implemented transaction creation form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added trigger for embedded controller (barrier simulation), implemented transaction creation form" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/vehicles/serializers.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="Added parking spots calculation logic, modified app home view" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Parking_Managament_System$Application.coverage" NAME="Application Coverage Results" MODIFIED="1731200291059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Parking_Managament_System$Application.coverage" NAME="Application Coverage Results" MODIFIED="1730915773001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

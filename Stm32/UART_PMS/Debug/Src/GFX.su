@@ -1,0 +1,3 @@
+GFX.c:71:6:GFX_draw_char	40	static
+GFX.c:136:6:GFX_draw_string	56	static
+GFX.c:157:6:GFX_draw_fill_rect	32	static
