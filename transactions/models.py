@@ -6,6 +6,10 @@ from django.utils import timezone
 
 from parking.models import Parking
 
+import serial
+import glob
+import sys
+
 
 # Create your models here.
 
@@ -24,6 +28,30 @@ class Transaction(models.Model):
     def __str__(self):
         return self.vehicle.licensePlate + " " + self.user.username + " " + self.zone
 
+    def ready(self):
+        self.serial_ports = self.init_serial_ports()
+
+    def init_serial_ports(self):
+        """Lists serial port names."""
+        if sys.platform.startswith('win'):
+            ports = ['COM%s' % (i + 1) for i in range(256)]
+        elif sys.platform.startswith('linux') or sys.platform.startswith('cygwin'):
+            ports = glob.glob('/dev/tty[A-Za-z]*')
+        elif sys.platform.startswith('darwin'):
+            ports = glob.glob('/dev/tty.*')
+        else:
+            raise EnvironmentError('Unsupported platform')
+
+        result = []
+        for port in ports:
+            try:
+                s = serial.Serial(port)
+                s.close()
+                result.append(port)
+            except (OSError, serial.SerialException):
+                pass
+        return result
+
 
 @receiver(post_save, sender=Transaction)
 def trigger_open_barrier(sender, instance, created, **kwargs):
@@ -32,6 +60,46 @@ def trigger_open_barrier(sender, instance, created, **kwargs):
 
 
 # This function gets triggered each time when user enter the parking lot (transaction gets created)
-# Kuba You need to implement Your logic for embedded controller here (for example trigger barrier open for 10seconds)
+
+def ser_write(ser, command, selected_port):
+    ser.write(command.encode())
+    print(f"send to {selected_port} message: {command}")
+    ser.close()
+
+
 def open_barrier(transaction):
+    ports = transaction.init_serial_ports()
+    if not ports:
+        print("No serial ports found!")
+        return
+    elif ports:
+        selected_port = ports[0]
+        ser = serial.Serial(selected_port, baudrate=115200, timeout=1)
+        print(f"connected to {selected_port}")
     print(f"Barrier opened for transaction {transaction.id} in zone {transaction.zone}")
+    if transaction.zone in ['greenZone', 'Green Zone'] and ports:
+
+        try:
+            command = "11"
+            ser_write(ser, command, selected_port)
+
+        except serial.SerialException as e:
+            print(f"Error communicating with serial port: {e}")
+
+    elif transaction.zone in ['redZone', 'Red Zone'] and ports:
+
+        try:
+            command = "21"
+            ser_write(ser, command, selected_port)
+
+        except serial.SerialException as e:
+            print(f"Error communicating with serial port: {e}")
+
+    elif transaction.zone in ['blueZone', 'Blue Zone'] and ports:
+
+        try:
+            command = "31"
+            ser_write(ser, command, selected_port)
+
+        except serial.SerialException as e:
+            print(f"Error communicating with serial port: {e}")
