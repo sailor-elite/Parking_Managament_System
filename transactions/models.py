@@ -32,7 +32,8 @@ class Transaction(models.Model):
     def ready(self):
         self.serial_ports = self.init_serial_ports()
 
-    def init_serial_ports(self):
+    @staticmethod
+    def init_serial_ports():
         """Lists serial port names."""
         if sys.platform.startswith('win'):
             ports = ['COM%s' % (i + 1) for i in range(256)]
