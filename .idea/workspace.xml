@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Added parking spots calculation logic, modified app home view">
-      <change afterPath="$PROJECT_DIR$/transactions/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicles/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Changed API Structure (added API endpoints for Vehicles/Transactions)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -212,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730408756064</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changed API Structure (added API endpoints for Vehicles/Transactions)">
+      <option name="closed" value="true" />
+      <created>1731357864186</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731357864186</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +231,8 @@
     <MESSAGE value="Added dynamic underline to navbar to make it more interactive." />
     <MESSAGE value="Added navbar title and few adjustments to Home Page" />
     <MESSAGE value="Added parking spots calculation logic, modified app home view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added parking spots calculation logic, modified app home view" />
+    <MESSAGE value="Changed API Structure (added API endpoints for Vehicles/Transactions)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed API Structure (added API endpoints for Vehicles/Transactions)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Parking_Managament_System$Application.coverage" NAME="Application Coverage Results" MODIFIED="1731349612138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
