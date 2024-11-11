@@ -3,10 +3,11 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.utils import timezone
-
+from serial import SerialException
+from serial import Serial
 from parking.models import Parking
 
-import serial
+# import Serial
 import glob
 import sys
 
@@ -45,10 +46,10 @@ class Transaction(models.Model):
         result = []
         for port in ports:
             try:
-                s = serial.Serial(port)
+                s = Serial(port)
                 s.close()
                 result.append(port)
-            except (OSError, serial.SerialException):
+            except (OSError, SerialException):
                 pass
         return result
 
@@ -74,7 +75,7 @@ def open_barrier(transaction):
         return
     elif ports:
         selected_port = ports[0]
-        ser = serial.Serial(selected_port, baudrate=115200, timeout=1)
+        ser = Serial(selected_port, baudrate=115200, timeout=1)
         print(f"connected to {selected_port}")
     print(f"Barrier opened for transaction {transaction.id} in zone {transaction.zone}")
     if transaction.zone in ['greenZone', 'Green Zone'] and ports:
@@ -83,7 +84,7 @@ def open_barrier(transaction):
             command = "11"
             ser_write(ser, command, selected_port)
 
-        except serial.SerialException as e:
+        except SerialException as e:
             print(f"Error communicating with serial port: {e}")
 
     elif transaction.zone in ['redZone', 'Red Zone'] and ports:
@@ -92,7 +93,7 @@ def open_barrier(transaction):
             command = "21"
             ser_write(ser, command, selected_port)
 
-        except serial.SerialException as e:
+        except SerialException as e:
             print(f"Error communicating with serial port: {e}")
 
     elif transaction.zone in ['blueZone', 'Blue Zone'] and ports:
@@ -101,5 +102,5 @@ def open_barrier(transaction):
             command = "31"
             ser_write(ser, command, selected_port)
 
-        except serial.SerialException as e:
+        except SerialException as e:
             print(f"Error communicating with serial port: {e}")
