@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect
 from .forms import VehicleForm
 from django.contrib.auth.decorators import login_required
-
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
 from .models import Vehicle
 
 

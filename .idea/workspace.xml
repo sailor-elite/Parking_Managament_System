@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Added parking spots calculation logic, modified app home view">
-      <change beforePath="$PROJECT_DIR$/.idea/Parking_Managament_System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Parking_Managament_System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Added serial port communication">
+      <change afterPath="$PROJECT_DIR$/transactions/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transactions/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicles/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +40,14 @@
     &quot;assignee&quot;: &quot;alicki-hash&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sailor-elite/Parking_Managament_System.git&quot;,
-    &quot;accountId&quot;: &quot;4d7fa429-3712-4abb-8359-1028bbab5164&quot;
-  }
-}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f4c10fd4-c898-4e91-9439-b56ca6552f29" />
+        <option name="url" value="https://github.com/sailor-elite/Parking_Managament_System.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -104,6 +109,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Parking_Managament_System)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -204,11 +210,30 @@
       <option name="project" value="LOCAL" />
       <updated>1730408756064</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added serial port communication">
+      <option name="closed" value="true" />
+      <created>1731229361179</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731229361179</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -218,7 +243,18 @@
     <MESSAGE value="Added dynamic underline to navbar to make it more interactive." />
     <MESSAGE value="Added navbar title and few adjustments to Home Page" />
     <MESSAGE value="Added parking spots calculation logic, modified app home view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added parking spots calculation logic, modified app home view" />
+    <MESSAGE value="Added serial port communication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added serial port communication" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/vehicles/forms.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Parking_Managament_System$Application.coverage" NAME="Application Coverage Results" MODIFIED="1730915773001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

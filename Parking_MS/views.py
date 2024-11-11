@@ -6,6 +6,9 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from parking.models import Parking
 from parking.serializers import ParkingSerializer
 from vehicles.models import Vehicle
+from transactions.models import Transaction
+from transactions.serializers import TransactionSerializer
+
 from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework.response import Response
 from rest_framework import serializers
@@ -59,6 +62,12 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
         parkings = Parking.objects.all()
         parking_serializer = ParkingSerializer(parkings, many=True)
         data['parkings'] = parking_serializer.data
+
+        # serialize Transactions -> add to response
+
+        transactions = Transaction.objects.filter(user=user)
+        transaction_serializer = TransactionSerializer(transactions, many=True)
+        data['transactions'] = transaction_serializer.data
 
         group_zone_access = {
             'STUDENT': ['greenZone'],

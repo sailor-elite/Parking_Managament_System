@@ -7,7 +7,15 @@ from transactions.models import Transaction
 
 
 def transactions_view(request):
-    transactions = Transaction.objects.all()
+    if request.method == 'POST':
+        form = TransactionForm(request.POST)
+        if form.is_valid():
+            transaction = form.save(commit=False)
+            transaction.save()
+            transaction.owners.set([request.user])
+            return redirect('transactions:transactions')
+    else:
+        transactions = Transaction.objects.all()
     return render(request, 'transactions.html', {'transactions': transactions})
 
 
