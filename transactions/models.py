@@ -6,7 +6,7 @@ from django.utils import timezone
 from serial import SerialException
 from serial import Serial
 from parking.models import Parking
-
+import pytz
 # import Serial
 import glob
 import sys
