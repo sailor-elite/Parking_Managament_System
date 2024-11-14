@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Added sub-site to check vehicle access">
-      <change afterPath="$PROJECT_DIR$/vehicle_access/migrations/0002_remove_vehicleaccess_vehicle_and_more.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Reworked vehicle_access site by checking user and zone accessibility">
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle_access/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle_access/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle_access/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle_access/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle_access/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle_access/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731591535966</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Reworked vehicle_access site by checking user and zone accessibility">
+      <option name="closed" value="true" />
+      <created>1731597110163</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1731597110163</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +301,8 @@
     <MESSAGE value=" Removed timezone settings (TZ=False) and updated code to use timezone.now() for time data collection" />
     <MESSAGE value="Refactor serial port communication for web and API requests" />
     <MESSAGE value="Added sub-site to check vehicle access" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added sub-site to check vehicle access" />
+    <MESSAGE value="Reworked vehicle_access site by checking user and zone accessibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reworked vehicle_access site by checking user and zone accessibility" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

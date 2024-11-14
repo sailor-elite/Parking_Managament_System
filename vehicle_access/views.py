@@ -49,7 +49,7 @@ def get_serial_command_for_zone(zone_name, access_granted):
 def send_command_to_serial_port(command):
     ports = init_serial_ports()
     if ports:
-        selected_port = ports[0]  # Wybór pierwszego portu
+        selected_port = ports[0]
         try:
             with Serial(selected_port, baudrate=115200, timeout=1) as ser:
                 ser.write(command.encode())
