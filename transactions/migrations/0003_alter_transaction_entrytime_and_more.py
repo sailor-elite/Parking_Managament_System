@@ -4,7 +4,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ('transactions', '0002_transaction_user'),
     ]
@@ -18,6 +17,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='transaction',
             name='exitTime',
-            field=models.DateTimeField(blank=True, null=True),
+            field=models.DateTimeField(auto_now_add=True, blank=True, null=True),
         ),
     ]
