@@ -6,6 +6,8 @@ from django.utils import timezone
 from serial import SerialException
 from serial import Serial
 from parking.models import Parking
+import datetime
+import pytz
 
 # import Serial
 import glob

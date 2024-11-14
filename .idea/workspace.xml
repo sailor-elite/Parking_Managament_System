@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Removed bugs connected with timezone and HTML labels">
+    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment=" Removed timezone settings (TZ=False) and updated code to use timezone.now() for time data collection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transactions/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicles/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/arek/PycharmProjects/Parking_Managament_System/transactions/templates",
+    "last_opened_file_path": "C:/Users/qq/PycharmProjects/Parking_Managament_System/manage.py",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -226,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731517675165</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=" Removed timezone settings (TZ=False) and updated code to use timezone.now() for time data collection">
+      <option name="closed" value="true" />
+      <created>1731577135116</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731577135116</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +262,8 @@
     <MESSAGE value="Added parking spots calculation logic, modified app home view" />
     <MESSAGE value="Added serial port communication" />
     <MESSAGE value="Removed bugs connected with timezone and HTML labels" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed bugs connected with timezone and HTML labels" />
+    <MESSAGE value=" Removed timezone settings (TZ=False) and updated code to use timezone.now() for time data collection" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Removed timezone settings (TZ=False) and updated code to use timezone.now() for time data collection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,7 +5,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -18,7 +17,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('entryTime', models.DateField(auto_now_add=True)),
-                ('exitTime', models.DateField(blank=True, null=True)),
+                ('exitTime', models.DateField(auto_now_add=True, blank=True, null=True)),
                 ('vehicle', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='vehicles.vehicle')),
             ],
         ),
