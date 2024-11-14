@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment=" Removed timezone settings (TZ=False) and updated code to use timezone.now() for time data collection">
+    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Refactor serial port communication for web and API requests">
+      <change afterPath="$PROJECT_DIR$/transactions/migrations/0007_alter_transaction_transactiontimestamp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle_access/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle_access/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle_access/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle_access/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle_access/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle_access/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle_access/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle_access/templates/vehicle_access/search_vehicle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle_access/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle_access/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle_access/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transactions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,11 +103,11 @@
       <recent name="$PROJECT_DIR$/Parking_MS/users/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\qq\PycharmProjects\Parking_Managament_System\vehicle_access\templates\vehicle_access" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Parking_MS" />
       <recent name="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/templates" />
       <recent name="$PROJECT_DIR$/Parking_MS/ParkingApp_MS" />
-      <recent name="$PROJECT_DIR$/Parking_MS/ParkingApp_MS/static" />
     </key>
   </component>
   <component name="RunManager">
@@ -250,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731581824009</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Refactor serial port communication for web and API requests">
+      <option name="closed" value="true" />
+      <created>1731586406965</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1731586406965</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +300,8 @@
     <MESSAGE value="Added serial port communication" />
     <MESSAGE value="Removed bugs connected with timezone and HTML labels" />
     <MESSAGE value=" Removed timezone settings (TZ=False) and updated code to use timezone.now() for time data collection" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Removed timezone settings (TZ=False) and updated code to use timezone.now() for time data collection" />
+    <MESSAGE value="Refactor serial port communication for web and API requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor serial port communication for web and API requests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -295,6 +318,11 @@
           <url>file://$PROJECT_DIR$/Parking_MS/settings.py</url>
           <line>11</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/vehicles/migrations/0003_alter_vehicle_model.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

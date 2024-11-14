@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Vehicle Access
+{% endblock %}
+
+{% block navbar-title %}
+Vehicle Access
+{% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css"/>
+<script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block content %}
+<h1>Check Vehicle Access</h1>
+<form class="form-with-validation" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Check Access</button>
+</form>
+
+{% if message %}
+<p>{{ message }}</p>
+{% endif %}
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#transactions-table').dataTable({
+            scrollY: 300,
+            scroller: true,
+            paging: false,
+            info: false,
+        });
+    });
+</script>
+{% endblock %}

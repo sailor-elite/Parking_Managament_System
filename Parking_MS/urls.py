@@ -10,4 +10,5 @@ urlpatterns = [
     path('users/', include('users.urls')),
     path('vehicles/', include('vehicles.urls'), name='vehicles'),
     path('transactions/', include('transactions.urls')),
+    path('vehicle_access/', include('vehicle_access.urls'))
 ]

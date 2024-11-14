@@ -92,9 +92,9 @@ def handle_web_transaction(request):
 
                 if transaction.zone in ['greenZone', 'Green Zone']:
                     command = "11"
-                elif transaction.zone in ['redZone', 'Red Zone']:
-                    command = "21"
                 elif transaction.zone in ['blueZone', 'Blue Zone']:
+                    command = "21"
+                elif transaction.zone in ['redZone', 'Red Zone']:
                     command = "31"
                 else:
                     print("Unknown zone")
@@ -119,7 +119,6 @@ def handle_api_transaction(request):
     data = request.data
 
     vehicle_license_plate = data.get('vehicle')
-    print(vehicle_license_plate)
     parking_name = data.get('parking')
 
     try:
@@ -146,9 +145,9 @@ def handle_api_transaction(request):
 
                 if transaction.zone in ['greenZone', 'Green Zone']:
                     command = "11"
-                elif transaction.zone in ['redZone', 'Red Zone']:
-                    command = "21"
                 elif transaction.zone in ['blueZone', 'Blue Zone']:
+                    command = "21"
+                elif transaction.zone in ['redZone', 'Red Zone']:
                     command = "31"
                 else:
                     print("Unknown zone")

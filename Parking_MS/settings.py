@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'users',
     'vehicles',
     'transactions',
-    'parking'
+    'parking',
+    'vehicle_access'
 ]
 
 REST_FRAMEWORK = {
