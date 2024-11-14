@@ -1,9 +1,19 @@
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
+
 from .forms import VehicleSearchForm
 from django.contrib.auth.models import User
 from serial import Serial, SerialException
 import glob
 import sys
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import api_view, permission_classes
+from vehicles.models import Vehicle
+from django.contrib.auth.models import User
+
+from .serializers import VehicleAccessRequestSerializer
 
 GROUP_ZONE_ACCESS = {
     'STUDENT': ['greenZone'],
@@ -60,25 +70,57 @@ def send_command_to_serial_port(command):
         print("No serial ports found!")
 
 
-def search_vehicle(request):
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def vehicle_access_api(request):
+    """Handles vehicle access request from API."""
+    serializer = VehicleAccessRequestSerializer(data=request.data)
+
+    if serializer.is_valid():
+        username = serializer.validated_data['username']
+        zone_name = serializer.validated_data['zone']
+
+        try:
+            user = User.objects.get(username=username)
+            user_groups = user.groups.values_list('name', flat=True)
+
+            accessible_zones = set()
+            for group in user_groups:
+                zones = GROUP_ZONE_ACCESS.get(group, [])
+                accessible_zones.update(zones)
+
+            if zone_name in accessible_zones:
+                command = get_serial_command_for_zone(zone_name, access_granted=True)
+                send_command_to_serial_port(command)
+                return Response({"message": "Access granted. Command sent to serial port."}, status=200)
+            else:
+                command = get_serial_command_for_zone(zone_name, access_granted=False)
+                send_command_to_serial_port(command)
+                return Response({"message": "User does not have access to this zone. Command sent for no access."},
+                                status=200)
+
+        except User.DoesNotExist:
+            return Response({"message": "User not found."}, status=404)
+    return Response(serializer.errors, status=400)
+
+
+@csrf_exempt
+@permission_classes([IsAuthenticated])
+def vehicle_access_web(request):
+    """Handles vehicle access request from web form."""
     if request.method == 'POST':
         form = VehicleSearchForm(request.POST)
         if form.is_valid():
             username = form.cleaned_data['username']
             zone_name = form.cleaned_data['zone']
-            print(f"Username: {username}, Zone: {zone_name}")
 
             try:
                 user = User.objects.get(username=username)
-                print(f"Found user: {user}")
-
                 user_groups = user.groups.values_list('name', flat=True)
-                print(f"User groups: {list(user_groups)}")
 
                 accessible_zones = set()
                 for group in user_groups:
                     zones = GROUP_ZONE_ACCESS.get(group, [])
-                    print(f"Group '{group}' has access to zones: {zones}")
                     accessible_zones.update(zones)
 
                 if zone_name in accessible_zones:
@@ -89,15 +131,10 @@ def search_vehicle(request):
                     command = get_serial_command_for_zone(zone_name, access_granted=False)
                     send_command_to_serial_port(command)
                     message = "User does not have access to this zone. Command sent for no access."
-
             except User.DoesNotExist:
                 message = "User not found."
+            return render(request, 'vehicle_access/search_vehicle.html', {'form': form, 'message': message})
 
-
-        else:
-            message = "Invalid form data."
-
-        return render(request, 'vehicle_access/search_vehicle.html', {'form': form, 'message': message})
     else:
         form = VehicleSearchForm()
 
