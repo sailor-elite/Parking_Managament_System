@@ -4,25 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Refactor serial port communication for web and API requests">
-      <change afterPath="$PROJECT_DIR$/transactions/migrations/0007_alter_transaction_transactiontimestamp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle_access/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle_access/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle_access/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle_access/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle_access/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle_access/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle_access/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle_access/templates/vehicle_access/search_vehicle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle_access/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle_access/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vehicle_access/views.py" afterDir="false" />
+    <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Added sub-site to check vehicle access">
+      <change afterPath="$PROJECT_DIR$/vehicle_access/migrations/0002_remove_vehicleaccess_vehicle_and_more.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parking_MS/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle_access/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle_access/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle_access/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle_access/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicle_access/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle_access/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731586406965</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added sub-site to check vehicle access">
+      <option name="closed" value="true" />
+      <created>1731591535965</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1731591535966</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +298,8 @@
     <MESSAGE value="Removed bugs connected with timezone and HTML labels" />
     <MESSAGE value=" Removed timezone settings (TZ=False) and updated code to use timezone.now() for time data collection" />
     <MESSAGE value="Refactor serial port communication for web and API requests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor serial port communication for web and API requests" />
+    <MESSAGE value="Added sub-site to check vehicle access" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added sub-site to check vehicle access" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
