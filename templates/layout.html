@@ -43,7 +43,8 @@
             </a> |
 
             <a href="{% url 'vehicle_access:search_vehicle' %}">
-                <span role="img" aria-label="Vehicle Access Search">🔍</span>
+                <span role="img" aria-label="Vehicle Access Search"
+                class="{% if request.path == '/vehicle_access/vehicle-access/' %}active-tab{% endif %}">🔍</span>
             </a> |
 
         {% else %}
