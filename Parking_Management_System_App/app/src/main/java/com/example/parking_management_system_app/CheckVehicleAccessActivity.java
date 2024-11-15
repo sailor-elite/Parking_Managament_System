@@ -120,7 +120,7 @@ public class CheckVehicleAccessActivity extends AppCompatActivity {
                     Log.d("CheckVehicleAccess", "Response error: " + response.code());
                     try {
                         String errorResponse = response.errorBody().string();
-                        Log.d("CheckVehicleAccess", "Error body: " + errorResponse); // Logowanie treści błędu
+                        Log.d("CheckVehicleAccess", "Error body: " + errorResponse); 
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
