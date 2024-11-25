@@ -10,13 +10,13 @@ public class TokenResponse {
     private String email;
     private String firstName;
     private String lastName;
-    private List<String> vehicles;
+    private List<Vehicle> vehicles;
     private List<String> userGroups;
     private List<String> accessibleZones;
     private List<String> parkings;
 
     public TokenResponse(String access, String refresh, int userId, String username, String email,
-                         String firstName, String lastName, List<String> vehicles, List<String> userGroups,
+                         String firstName, String lastName, List<Vehicle> vehicles, List<String> userGroups,
                          List<String> accessibleZones, List<String> parkings) {
         this.access = access;
         this.refresh = refresh;
@@ -88,11 +88,11 @@ public class TokenResponse {
         this.lastName = lastName;
     }
 
-    public List<String> getVehicles() {
+    public List<Vehicle> getVehicles() {
         return vehicles;
     }
 
-    public void setVehicles(List<String> vehicles) {
+    public void setVehicles(List<Vehicle> vehicles) {
         this.vehicles = vehicles;
     }
 

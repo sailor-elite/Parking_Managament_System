@@ -33,7 +33,7 @@ def vehicles_view(request):
             else:
                 return Response({'status': 'error', 'errors': serializer.errors}, status=400)
         else:
-            form = VehicleForm(request.POST)
+            form = VehicleForm(request.POST, request.FILES)
             if form.is_valid():
                 vehicle = form.save(commit=False)
                 vehicle.save()

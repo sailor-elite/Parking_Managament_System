@@ -5,10 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebb266cb-efc2-4479-94e3-477532b3bb9e" name="Changes" comment="Reworked vehicle_access site by checking user and zone accessibility (WEB and API functionality)">
+      <change afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/VehicleAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/VehiclesList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/drawable/baseline_car_crash_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/drawable/logout_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/layout/activity_vehicles_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/layout/vehicle_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/layout/vehicle_list_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/vehicle_photos/polonez.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/vehicle_photos/vehicle2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/vehicle_photos/vehicle2_Hshgt19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/vehicle_photos/vehicle5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/vehicle_photos/vehicle5_4ohTCrK.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/vehicle_photos/vehicle6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicles/migrations/0004_vehicle_vehicle_photo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Parking_MS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_MS/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_MS/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/CheckVehicleAccessActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/CheckVehicleAccessActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/RetrofitClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/RetrofitClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/TokenResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/TokenResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/UserProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/java/com/example/parking_management_system_app/UserProfileActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/layout/activity_check_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/layout/activity_check_user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/layout/activity_user_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/layout/activity_user_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/xml/network_security_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/app/src/main/res/xml/network_security_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parking_Management_System_App/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Parking_Management_System_App/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/stats.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stats.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicles/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicles/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicles/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicles/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicles/templates/vehicles.html" beforeDir="false" afterPath="$PROJECT_DIR$/vehicles/templates/vehicles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicles/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vehicles/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicles/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,14 +77,12 @@
     &quot;assignee&quot;: &quot;alicki-hash&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="f4c10fd4-c898-4e91-9439-b56ca6552f29" />
-        <option name="url" value="https://github.com/sailor-elite/Parking_Managament_System.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sailor-elite/Parking_Managament_System.git&quot;,
+    &quot;accountId&quot;: &quot;4d7fa429-3712-4abb-8359-1028bbab5164&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -62,26 +100,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.Application.executor": "Run",
-    "Python.urls.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/qq/PycharmProjects/Parking_Managament_System/manage.py",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Python.urls.executor&quot;: &quot;Run&quot;,
+    &quot;Python.visualisation.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/qq/PycharmProjects/Parking_Managament_System/manage.py&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/transactions/templates" />
@@ -96,7 +135,7 @@
       <recent name="$PROJECT_DIR$/Parking_MS/ParkingApp_MS" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Application">
     <configuration name="Application" type="PythonConfigurationType" factoryName="Python">
       <module name="Parking_Managament_System" />
       <option name="ENV_FILES" value="" />
@@ -106,14 +145,14 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (Parking_Managament_System)" />
+      <option name="SDK_NAME" value="Python 3.12" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
-      <option name="PARAMETERS" value="runserver 192.168.0.140:8000" />
+      <option name="PARAMETERS" value="runserver 127.0.0.1:8000" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -121,11 +160,44 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="visualisation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Parking_Managament_System" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visualisation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Application" />
+      <item itemvalue="Python.visualisation" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.visualisation" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-c69650fc56ca-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15619.17" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
       </set>
     </attachedChunks>
   </component>
@@ -153,6 +225,10 @@
       <workItem from="1729788246762" duration="584000" />
       <workItem from="1729788841028" duration="26961000" />
       <workItem from="1729953788930" duration="37408000" />
+      <workItem from="1732363086104" duration="1002000" />
+      <workItem from="1732367373262" duration="4608000" />
+      <workItem from="1732477561522" duration="2641000" />
+      <workItem from="1732486630176" duration="7245000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -328,17 +404,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/vehicles/forms.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/transactions/models.py</url>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Parking_MS/settings.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/vehicles/migrations/0003_alter_vehicle_model.py</url>
@@ -349,6 +416,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Parking_Managament_System$Application.coverage" NAME="Application Coverage Results" MODIFIED="1730915773001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Parking_Managament_System$Application.coverage" NAME="Application Coverage Results" MODIFIED="1732556864866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Parking_Managament_System$visualisation.coverage" NAME="visualisation Coverage Results" MODIFIED="1731747375157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

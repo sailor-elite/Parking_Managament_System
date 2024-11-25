@@ -1,35 +1,35 @@
 {% extends 'layout.html' %}
 {% block title %}
-Stats
+    Stats
 {% endblock %}
 {% block navbar-title %}
-Stats
+    Stats
 {% endblock %}
 
 {% block extra_head %}
-<link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css"/>
-<script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"></script>
 {% endblock %}
 
 {% block content %}
-<section class="users-and-vehicles">
-    <div class="vertical-container">
-        <h2>Users</h2>
-        <table id="users-table" class="display" style="width:100%">
-            <thead>
-            <tr>
-                <th>First name</th>
-                <th>Last name</th>
-                <th>Username</th>
-                <th>Roles</th>
-                <th>Last log in time</th>
-            </tr>
-            </thead>
-            <tbody>
-            {% for user in users %}
-            <tr data-vehicles='[
+    <section class="users-and-vehicles">
+        <div class="vertical-container">
+            <h2>Users</h2>
+            <table id="users-table" class="display" style="width:100%">
+                <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Username</th>
+                    <th>Roles</th>
+                    <th>Last log in time</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for user in users %}
+                    <tr data-vehicles='[
                     {% for vehicle in user.vehicles.all %}
                         {
                         "license Plate": "{{ vehicle.licensePlate }}",
@@ -38,34 +38,34 @@ Stats
                         }{% if not forloop.last %},{% endif %}
                     {% endfor %}
                 ]'>
-                <td>{{ user.first_name }}</td>
-                <td>{{ user.last_name }}</td>
-                <td>{{ user.username }}</td>
-                <td>
-                    {% for group in user.groups.all %}
-                    {{ group.name }}{% if not forloop.last %},<br>{% endif %}
-                    {% endfor %}
-                </td>
-                <td>{{ user.last_login }}</td>
-            </tr>
-            {% endfor %}
-            </tbody>
-        </table>
-        <p>&#8593; Click on the entry to display details. &#8593;</p>
-    </div>
+                        <td>{{ user.first_name }}</td>
+                        <td>{{ user.last_name }}</td>
+                        <td>{{ user.username }}</td>
+                        <td>
+                            {% for group in user.groups.all %}
+                                {{ group.name }}{% if not forloop.last %},<br>{% endif %}
+                            {% endfor %}
+                        </td>
+                        <td>{{ user.last_login }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <p>&#8593; Click on the entry to display details. &#8593;</p>
+        </div>
 
-    <div class="vertical-container">
-        <h2>Vehicles</h2>
-        <table id="vehicles-table" class="display" style="width:100%">
-            <thead>
-            <tr>
-                <th>License &nbsp; plate</th>
-                <th>Make & Model</th>
-            </tr>
-            </thead>
-            <tbody>
-            {% for vehicle in vehicles %}
-            <tr data-owners='[
+        <div class="vertical-container">
+            <h2>Vehicles</h2>
+            <table id="vehicles-table" class="display" style="width:100%">
+                <thead>
+                <tr>
+                    <th>License &nbsp; plate</th>
+                    <th>Make & Model</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for vehicle in vehicles %}
+                    <tr data-owners='[
             {% for owner in vehicle.owners.all %}
                 {
                     "username": "{{ owner.username }}",
@@ -74,46 +74,46 @@ Stats
                 }{% if not forloop.last %},{% endif %}
             {% endfor %}
             ]'>
-                <td>{{ vehicle.licensePlate }}</td>
-                <td>{{ vehicle.make }} {{ vehicle.model }}</td>
-            </tr>
-            {% endfor %}
-            </tbody>
-        </table>
-        <p>&#8593; Click on the entry to display details. &#8593;</p>
-    </div>
-</section>
+                        <td>{{ vehicle.licensePlate }}</td>
+                        <td>{{ vehicle.make }} {{ vehicle.model }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <p>&#8593; Click on the entry to display details. &#8593;</p>
+        </div>
+    </section>
 
-<div id="stats-details">
-    <div id="users-stats-details"></div>
-    <div id="vehicles-stats-details"></div>
-</div>
+    <div id="stats-details">
+        <div id="users-stats-details"></div>
+        <div id="vehicles-stats-details"></div>
+    </div>
 
 {% endblock %}
 
 {% block extra_scripts %}
-<script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
-<script>
-    const vehiclesTable = $('#vehicles-table').DataTable({
-        scrollY: 200,
-        scroller: true,
-        paging: false,
-        info: false,
-        scrollX: 400,
-        searching: false
-    });
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script>
+        const vehiclesTable = $('#vehicles-table').DataTable({
+            scrollY: 200,
+            scroller: true,
+            paging: false,
+            info: false,
+            scrollX: 400,
+            searching: false
+        });
 
-    const usersTable = $('#users-table').DataTable({
-        scrollY: 200,
-        scroller: true,
-        paging: false,
-        info: false,
-        scrollX: 700,
-        searching: false
-    });
+        const usersTable = $('#users-table').DataTable({
+            scrollY: 200,
+            scroller: true,
+            paging: false,
+            info: false,
+            scrollX: 700,
+            searching: false
+        });
 
-    function displayUserDetails(data, vehicles) {
-        $('#users-stats-details').html(`
+        function displayUserDetails(data, vehicles) {
+            $('#users-stats-details').html(`
         <strong>Selected User:</strong><br>
         <ul>
             <li>
@@ -126,21 +126,21 @@ Stats
         </ul>
         `);
 
-        if (vehicles && vehicles.length > 0) {
-            const vehicleList = vehicles.map(vehicle => `
-            <li>${vehicle.licensePlate} - ${vehicle.make} ${vehicle.model}</li>
+            if (vehicles && vehicles.length > 0) {
+                const vehicleList = vehicles.map(vehicle => `
+            <li>${vehicle["license Plate"]} - ${vehicle.make} ${vehicle.model}</li>
         `).join('');
-            $('#vehicles-stats-details').html(`
+                $('#vehicles-stats-details').html(`
             <strong>Vehicles Assigned to User:</strong><br>
             <ul>${vehicleList}</ul>
         `);
-        } else {
-            $('#vehicles-stats-details').html('<strong>No vehicles assigned to this user.</strong>');
+            } else {
+                $('#vehicles-stats-details').html('<strong>No vehicles assigned to this user.</strong>');
+            }
         }
-    }
 
-    function displayVehicleDetails(data, owners) {
-        $('#vehicles-stats-details').html(`
+        function displayVehicleDetails(data, owners) {
+            $('#vehicles-stats-details').html(`
         <strong>Selected Vehicle:</strong><br>
         <ul>
             <li>
@@ -150,42 +150,42 @@ Stats
         </ul>
         `);
 
-        if (owners && owners.length > 0) {
-            const ownerList = owners.map(owner => `
+            if (owners && owners.length > 0) {
+                const ownerList = owners.map(owner => `
             <li>${owner.first_name} ${owner.last_name} (${owner.username})</li>
         `).join('');
-            $('#users-stats-details').html(`
+                $('#users-stats-details').html(`
             <strong>Owners of Vehicle:</strong><br>
             <ul>${ownerList}</ul>
         `);
-        } else {
-            $('#users-stats-details').html('<strong>No owners assigned to this vehicle.</strong>');
+            } else {
+                $('#users-stats-details').html('<strong>No owners assigned to this vehicle.</strong>');
+            }
         }
-    }
 
-    $('#users-table tbody').on('click', 'tr', function () {
-        const data = usersTable.row(this).data();
-        const vehicles = $(this).data('vehicles');
+        $('#users-table tbody').on('click', 'tr', function () {
+            const data = usersTable.row(this).data();
+            const vehicles = $(this).data('vehicles');
 
-        $(this).toggleClass('selected').siblings().removeClass('selected');
-        $('#vehicles-table tbody tr.selected').removeClass('selected');
+            $(this).toggleClass('selected').siblings().removeClass('selected');
+            $('#vehicles-table tbody tr.selected').removeClass('selected');
 
-        $('#users-stats-details').addClass('blue-borders');
-        $('#vehicles-stats-details').removeClass('blue-borders');
-        displayUserDetails(data, vehicles);
-    });
+            $('#users-stats-details').addClass('blue-borders');
+            $('#vehicles-stats-details').removeClass('blue-borders');
+            displayUserDetails(data, vehicles);
+        });
 
-    $('#vehicles-table tbody').on('click', 'tr', function () {
-        const data = vehiclesTable.row(this).data();
-        const owners = $(this).data('owners');
+        $('#vehicles-table tbody').on('click', 'tr', function () {
+            const data = vehiclesTable.row(this).data();
+            const owners = $(this).data('owners');
 
-        $(this).toggleClass('selected').siblings().removeClass('selected');
-        $('#users-table tbody tr.selected').removeClass('selected');
+            $(this).toggleClass('selected').siblings().removeClass('selected');
+            $('#users-table tbody tr.selected').removeClass('selected');
 
-        $('#vehicles-stats-details').addClass('blue-borders');
-        $('#users-stats-details').removeClass('blue-borders');
-        displayVehicleDetails(data, owners);
-    });
-</script>
+            $('#vehicles-stats-details').addClass('blue-borders');
+            $('#users-stats-details').removeClass('blue-borders');
+            displayVehicleDetails(data, owners);
+        });
+    </script>
 
 {% endblock %}

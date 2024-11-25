@@ -74,48 +74,101 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
+    <!--    <Button-->
+    <!--        android:id="@+id/logoutButton3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="16dp"-->
+    <!--        android:layout_marginStart="40dp"-->
+    <!--        android:layout_marginEnd="25dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:backgroundTint="#5E88C6"-->
+    <!--        android:text="Logout"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/transactionButton2"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/transactionButton2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="16dp"-->
+    <!--        android:layout_marginStart="60dp"-->
+    <!--        android:layout_marginEnd="37dp"-->
+    <!--        android:backgroundTint="#5E88C6"-->
+    <!--        android:text="Transaction"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/checkButton2"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/logoutButton3" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/checkButton2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="16dp"-->
+    <!--        android:layout_marginStart="60dp"-->
+    <!--        android:layout_marginEnd="58dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:backgroundTint="#5E88C6"-->
+    <!--        android:text="Check"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/transactionButton2" />-->
+
+    <!-- Transaction Button -->
     <Button
         android:id="@+id/logoutButton3"
-        android:layout_width="wrap_content"
+        android:layout_width="107dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#5E88C6"
         android:text="Logout"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/transactionButton2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/checkButton2"
+        app:layout_constraintStart_toStartOf="@+id/checkButton2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.953" />
 
+    <!-- Check Button -->
     <Button
         android:id="@+id/transactionButton2"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="37dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#5E88C6"
         android:text="Transaction"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/checkButton2"
-        app:layout_constraintStart_toEndOf="@id/logoutButton3" />
+        app:layout_constraintBottom_toTopOf="@id/vehiclesButton2"
+        app:layout_constraintStart_toEndOf="@id/logoutButton3"
+        app:layout_constraintStart_toStartOf="@+id/vehiclesButton2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.953" />
 
     <Button
         android:id="@+id/checkButton2"
-        android:layout_width="wrap_content"
+        android:layout_width="108dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginBottom="16dp"
         android:backgroundTint="#5E88C6"
         android:text="Check"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/vehiclesButton2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Vehicles Button -->
+    <Button
+        android:id="@+id/vehiclesButton2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5E88C6"
+        android:text="Vehicles"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/transactionButton2" />
+        app:layout_constraintStart_toEndOf="@id/checkButton2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

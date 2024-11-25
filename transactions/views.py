@@ -121,16 +121,25 @@ def handle_api_transaction(request):
     vehicle_license_plate = data.get('vehicle')
     parking_name = data.get('parking')
 
+    print(data)
+
     try:
         vehicle = Vehicle.objects.get(licensePlate=vehicle_license_plate)
     except Vehicle.DoesNotExist:
+        print("Vehicle not found")
         return Response({'status': 'error', 'message': 'Vehicle not found'}, status=404)
     try:
         parking = Parking.objects.get(name=parking_name)
     except Parking.DoesNotExist:
+        print("Parking not found")
         return Response({'status': 'error', 'message': 'Parking not found'}, status=404)
+
     form_data = {**data, 'vehicle': vehicle, 'parking': parking}
+
+    print(form_data)
+
     form = TransactionForm(form_data, user=user)
+
     if form.is_valid():
         transaction = form.save()
 

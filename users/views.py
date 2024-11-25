@@ -3,7 +3,6 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, logout
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
-
 from parking.models import Parking
 from users.forms import SignUpForm
 from vehicles.models import Vehicle
@@ -52,10 +51,22 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
         data['firstName'] = user.first_name
         data['lastName'] = user.last_name
 
+        request = self.context.get('request')
+        
         # serialize Vehicles -> add to response
         vehicles = Vehicle.objects.filter(owners=user)
-        data['vehicles'] = [f"{vehicle.licensePlate} {vehicle.make} {vehicle.model}" for vehicle in vehicles]
-
+        # data['vehicles'] = [f"{vehicle.licensePlate} {vehicle.make} {vehicle.model}" for vehicle in vehicles]
+        data['vehicles'] = [
+            {
+                'licensePlate': vehicle.licensePlate,
+                'make': vehicle.make,
+                'model': vehicle.model,
+                # 'photo': vehicle.vehicle_photo.url if vehicle.vehicle_photo else None
+                'photo': request.build_absolute_uri(
+                    vehicle.vehicle_photo.url) if vehicle.vehicle_photo and request else None
+            }
+            for vehicle in vehicles
+        ]
         parking_names = Parking.objects.values_list('name', flat=True)
         data['parkings'] = list(parking_names)
 
@@ -82,3 +93,8 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
 
 class CustomTokenObtainPairView(TokenObtainPairView):
     serializer_class = CustomTokenObtainPairSerializer
+
+    def get_serializer_context(self):
+        context = super().get_serializer_context()
+        context['request'] = self.request
+        return context

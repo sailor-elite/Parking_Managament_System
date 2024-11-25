@@ -14,6 +14,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.gson.Gson;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                     String email = tokenResponse.getEmail();
                     String firstName = tokenResponse.getFirstName();
                     String lastName = tokenResponse.getLastName();
-                    List<String> vehicles = tokenResponse.getVehicles();
+                    List<Vehicle> vehicles = tokenResponse.getVehicles();
                     List<String> userGroups = tokenResponse.getUserGroups();
                     List<String> accessibleZones = tokenResponse.getAccessibleZones();
                     List<String> parkings = tokenResponse.getParkings();
@@ -83,7 +85,9 @@ public class MainActivity extends AppCompatActivity {
 
                     Log.d("LoginResponse", "Username: " + username);
                     Log.d("LoginResponse", "Email: " + email);
-                    Log.d("LoginResponse", "Vehicles: " + vehicles);
+                    for (Vehicle vehicle : vehicles) {
+                        Log.wtf("Vehicle", vehicle.toString());
+                    }
                     Log.d("LoginResponse", "userGroups: " + userGroups);
                     Log.d("LoginResponse", "firstName: " + firstName);
                     Log.d("LoginResponse", "lastName: " + lastName);
@@ -95,7 +99,8 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("lastName", lastName);
                     intent.putExtra("username", username);
                     intent.putExtra("email", email);
-                    intent.putExtra("vehicles", new ArrayList<>(vehicles));
+                    Gson gson = new Gson();
+                    intent.putExtra("vehicles", gson.toJson(vehicles));
                     intent.putExtra("userGroups", new ArrayList<>(userGroups));
                     intent.putExtra("parkings", new ArrayList<>(parkings));
                     intent.putExtra("accessibleZones", new ArrayList<>(accessibleZones));

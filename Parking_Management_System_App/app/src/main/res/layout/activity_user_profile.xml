@@ -9,23 +9,6 @@
     tools:context=".UserProfileActivity">
 
 
-    <!-- Sekcja z danymi użytkownika -->
-
-    <Button
-        android:id="@+id/checkButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#5E88C6"
-        android:text="Check"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/transactionButton" />
-
     <androidx.cardview.widget.CardView
         android:id="@+id/userDataCardView"
         android:layout_width="0dp"
@@ -126,9 +109,9 @@
                 android:id="@+id/vehicleSpinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#5E88C6"
+                android:backgroundTint="@color/grey"
                 android:minHeight="48dp"
-                android:popupBackground="#5E88C6"
+                android:popupBackground="@color/grey"
                 android:spinnerMode="dropdown" />
 
             <TextView
@@ -144,9 +127,9 @@
                 android:id="@+id/parkingSpinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#5E88C6"
+                android:backgroundTint="@color/grey"
                 android:minHeight="48dp"
-                android:popupBackground="#5E88C6"
+                android:popupBackground="@color/grey"
                 android:spinnerMode="dropdown" />
 
             <TextView
@@ -162,9 +145,9 @@
                 android:id="@+id/zoneSpinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#5E88C6"
+                android:backgroundTint="@color/grey"
                 android:minHeight="48dp"
-                android:popupBackground="#5E88C6"
+                android:popupBackground="@color/grey"
                 android:spinnerMode="dropdown" />
 
             <Button
@@ -181,30 +164,52 @@
 
     <Button
         android:id="@+id/logoutButton"
-        android:layout_width="wrap_content"
+        android:layout_width="107dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#5E88C6"
         android:text="Logout"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/transactionButton"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/checkButton"
+        app:layout_constraintStart_toStartOf="@+id/checkButton"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
+    <!-- Transaction Button -->
     <Button
         android:id="@+id/transactionButton"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="21dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#5E88C6"
         android:text="Transaction"
         android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@id/vehiclesButton"
+        app:layout_constraintStart_toEndOf="@id/logoutButton"
+        app:layout_constraintStart_toStartOf="@+id/vehiclesButton"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <!-- Check Button -->
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5E88C6"
+        android:text="Check"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/checkButton"
-        app:layout_constraintStart_toEndOf="@id/logoutButton" />
+        app:layout_constraintEnd_toStartOf="@id/vehiclesButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Vehicles Button -->
+    <Button
+        android:id="@+id/vehiclesButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5E88C6"
+        android:text="Vehicles"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/checkButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

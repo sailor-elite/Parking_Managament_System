@@ -28,9 +28,15 @@
                     </thead>
                     <tbody>
                     {% for vehicle in user.vehicles.all %}
-                        <td>{{ vehicle.licensePlate }}</td>
-                        <td>{{ vehicle.make }}</td>
-                        <td>{{ vehicle.model }}</td>
+                        <tr
+                                class="vehicle-row"
+                                {% if vehicle.vehicle_photo %}
+                                data-vehicle-photo="{{ vehicle.vehicle_photo.url }}"
+                                {% endif %}
+                        >
+                            <td>{{ vehicle.licensePlate }}</td>
+                            <td>{{ vehicle.make }}</td>
+                            <td>{{ vehicle.model }}</td>
                         </tr>
                     {% endfor %}
                     </tbody>
@@ -43,13 +49,19 @@
         </div>
         <div class="vertical-container">
             <h2>Register new vehicle:</h2>
-            <form id="register-vehicle-form" class="form-with-validation" method="POST">
+            <form id="register-vehicle-form" class="form-with-validation" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form.as_table }}
                 <button class="form-submit" type="submit">Register Vehicle</button>
             </form>
         </div>
     </section>
+
+    <div id="vehicle-photo-preview"
+         style="display:none; position:fixed; border:1px solid #ccc; background:#fff; padding:5px;">
+        <img id="vehicle-photo-img" src="" alt="Vehicle Photo" style="max-width:200px; max-height:200px;">
+    </div>
+
 {% endblock %}
 
 {% block extra_scripts %}
@@ -63,5 +75,35 @@
             scrollX: 400,
             searching: false
         });
+
+        const photoPreview = $('#vehicle-photo-preview');
+        const photoImg = $('#vehicle-photo-img');
+
+        $('.vehicle-row').hover(
+            function () {
+                const photoUrl = $(this).data('vehicle-photo');
+                if (photoUrl) {
+                    photoImg.attr('src', photoUrl);
+                    photoPreview.css('display', 'block');
+                    console.log("photo showed");
+                }
+            }
+
+            ,
+
+            function () {
+                photoPreview.css('display', 'none');
+                photoImg.attr('src', '');
+            }
+        )
+        ;
+
+        $('.vehicle-row').mousemove(function (e) {
+            photoPreview.css({
+                top: e.pageY + 15 + 'px',
+                left: e.pageX + 15 + 'px'
+            });
+        });
+
     </script>
 {% endblock %}

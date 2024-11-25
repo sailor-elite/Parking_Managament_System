@@ -24,6 +24,9 @@
             android:name=".CheckVehicleAccessActivity"
             android:exported="false" />
         <activity
+            android:name=".VehiclesList"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
