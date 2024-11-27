@@ -11,9 +11,15 @@ from vehicles.models import Vehicle
 
 def home(request):
     parking = Parking.objects.first()
-    available_green_spaces = parking.get_available_spaces('greenZone')
-    available_blue_spaces = parking.get_available_spaces('blueZone')
-    available_red_spaces = parking.get_available_spaces('redZone')
+
+    if parking is None:
+        available_green_spaces = 0
+        available_blue_spaces = 0
+        available_red_spaces = 0
+    else:
+        available_green_spaces = parking.get_available_spaces('greenZone')
+        available_blue_spaces = parking.get_available_spaces('blueZone')
+        available_red_spaces = parking.get_available_spaces('redZone')
 
     context = {
         'parking': parking,
